@@ -162,7 +162,8 @@ vim.opt.scrolloff = 0
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set('n', '<leader>sc', '<cmd>nohlsearch<cr>')
+vim.keymap.set('n', '<leader>fs', '<cmd>w<cr>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
